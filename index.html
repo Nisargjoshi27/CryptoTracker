@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptocurrency Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Cryptocurrency Tracker</h1>
+      <p>Compare up to 5 cryptocurrencies in real-time.</p>
+    </header>
+
+    <section id="crypto-list">
+      <h2>Cryptocurrency Listing</h2>
+      <div id="crypto-container"></div>
+    </section>
+
+    <section id="comparison-section">
+      <h2>Comparison</h2>
+      <div id="comparison-container"></div>
+    </section>
+
+    <section id="preferences">
+      <h2>Preferences</h2>
+      <label for="sort-options">Sort by:</label>
+      <select id="sort-options">
+        <option value="market_cap_desc">Market Cap (High to Low)</option>
+        <option value="market_cap_asc">Market Cap (Low to High)</option>
+        <option value="price_desc">Price (High to Low)</option>
+        <option value="price_asc">Price (Low to High)</option>
+      </select>
+    </section>
+
+    <section id="display-settings">
+      <h2>Display Settings</h2>
+      <label for="theme-toggle">Theme:</label>
+      <select id="theme-toggle">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+      <label for="font-size-toggle">Font Size:</label>
+      <select id="font-size-toggle">
+        <option value="normal">Normal</option>
+        <option value="large">Large</option>
+      </select>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
